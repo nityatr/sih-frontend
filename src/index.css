@@ -14,6 +14,10 @@
   .animation-delay-1000 {
     animation-delay: 1s;
   }
+  
+  .safe-area-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
 }
 
 @keyframes fadeIn {
