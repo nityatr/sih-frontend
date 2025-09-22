@@ -18,6 +18,10 @@
   .safe-area-bottom {
     padding-bottom: env(safe-area-inset-bottom);
   }
+  
+  .rotate-on-hover:hover {
+    transform: rotate(180deg);
+  }
 }
 
 @keyframes fadeIn {

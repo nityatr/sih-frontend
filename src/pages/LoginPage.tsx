@@ -31,8 +31,12 @@ const LoginPage = () => {
           {/* Header */}
           <div className="text-center">
             <div className="flex items-center justify-center space-x-2 mb-6">
-              <MapPin className="h-10 w-10 text-emerald-600" />
-              <span className="text-3xl font-bold text-gray-800">Jharkhand Explorer</span>
+              <img 
+                src="/WhatsApp Image 2025-09-21 at 17.45.41_f0d7bec8.jpg" 
+                alt="Pehchan Jharkhand" 
+                className="h-12 w-12 object-contain"
+              />
+              <span className="text-3xl font-bold text-gray-800">Pehchan Jharkhand</span>
             </div>
             <h2 className="text-3xl font-bold text-gray-800 mb-2">Welcome Back</h2>
             <p className="text-gray-600">Sign in to continue your Jharkhand journey</p>

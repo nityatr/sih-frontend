@@ -27,9 +27,42 @@ const HeroPage = () => {
   ];
 
   const marketplaceItems = [
-    { name: 'Handwoven Textiles', icon: '🧵', price: '₹800-2500' },
-    { name: 'Tribal Jewelry', icon: '💍', price: '₹500-3000' },
-    { name: 'Local Handicrafts', icon: '🎨', price: '₹300-1500' }
+    {
+      name: 'Handwoven Textiles',
+      image: 'https://images.pexels.com/photos/6292/red-blue-orange-pattern.jpg?auto=compress&cs=tinysrgb&w=400',
+      price: '₹800-2500',
+      description: 'Traditional tribal fabrics and sarees'
+    },
+    {
+      name: 'Tribal Jewelry',
+      image: 'https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=400',
+      price: '₹500-3000',
+      description: 'Authentic silver and brass ornaments'
+    },
+    {
+      name: 'Dokra Metal Craft',
+      image: 'https://images.pexels.com/photos/4226881/pexels-photo-4226881.jpeg?auto=compress&cs=tinysrgb&w=400',
+      price: '₹1200-4000',
+      description: 'Ancient lost-wax casting technique'
+    },
+    {
+      name: 'Bamboo Products',
+      image: 'https://images.pexels.com/photos/4226770/pexels-photo-4226770.jpeg?auto=compress&cs=tinysrgb&w=400',
+      price: '₹200-1500',
+      description: 'Eco-friendly baskets and home decor'
+    },
+    {
+      name: 'Stone Carvings',
+      image: 'https://images.pexels.com/photos/3408354/pexels-photo-3408354.jpeg?auto=compress&cs=tinysrgb&w=400',
+      price: '₹800-5000',
+      description: 'Intricate sculptures and figurines'
+    },
+    {
+      name: 'Tribal Masks',
+      image: 'https://images.pexels.com/photos/4226924/pexels-photo-4226924.jpeg?auto=compress&cs=tinysrgb&w=400',
+      price: '₹600-2500',
+      description: 'Traditional ceremonial masks'
+    }
   ];
 
   return (
@@ -39,8 +72,12 @@ const HeroPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
-              <MapPin className="h-8 w-8 text-emerald-600" />
-              <span className="text-2xl font-bold text-gray-800">Jharkhand Explorer</span>
+              <img 
+                src="/WhatsApp Image 2025-09-21 at 17.45.41_f0d7bec8.jpg" 
+                alt="Pehchan Jharkhand" 
+                className="h-10 w-10 object-contain"
+              />
+              <span className="text-2xl font-bold text-gray-800">Pehchan Jharkhand</span>
             </div>
             
             <div className="hidden md:flex items-center space-x-8">
@@ -236,17 +273,26 @@ const HeroPage = () => {
             {marketplaceItems.map((item, index) => (
               <div 
                 key={index}
-                className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-8 text-center group hover:-translate-y-1"
+                className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-500 overflow-hidden group hover:-translate-y-2"
               >
-                <div className="text-6xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                  {item.icon}
+                <div className="relative overflow-hidden h-48">
+                  <img 
+                    src={item.image} 
+                    alt={item.name}
+                    className="w-full h-full object-cover group-hover:rotate-180 group-hover:scale-110 transition-all duration-700 ease-in-out"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-2">{item.name}</h3>
-                <p className="text-emerald-600 font-semibold text-lg">{item.price}</p>
-                <button className="mt-4 text-emerald-600 hover:text-emerald-700 font-medium flex items-center space-x-1 mx-auto group-hover:space-x-2 transition-all">
-                  <span>View Products</span>
-                  <ArrowRight className="h-4 w-4" />
-                </button>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-800 mb-2">{item.name}</h3>
+                  <p className="text-gray-600 text-sm mb-3">{item.description}</p>
+                  <p className="text-emerald-600 font-semibold text-lg mb-4">{item.price}</p>
+                  <button className="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-2 px-4 rounded-lg font-medium transition-colors duration-200 flex items-center justify-center space-x-2 group-hover:space-x-3">
+                    <ShoppingBag className="h-4 w-4" />
+                    <span>View Products</span>
+                    <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform duration-200" />
+                  </button>
+                </div>
               </div>
             ))}
           </div>
@@ -259,8 +305,12 @@ const HeroPage = () => {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <MapPin className="h-8 w-8 text-emerald-400" />
-                <span className="text-2xl font-bold">Jharkhand Explorer</span>
+                <img 
+                  src="/WhatsApp Image 2025-09-21 at 17.45.41_f0d7bec8.jpg" 
+                  alt="Pehchan Jharkhand" 
+                  className="h-10 w-10 object-contain"
+                />
+                <span className="text-2xl font-bold">Pehchan Jharkhand</span>
               </div>
               <p className="text-gray-400">Discover the beauty and culture of Jharkhand with our comprehensive travel platform.</p>
             </div>
