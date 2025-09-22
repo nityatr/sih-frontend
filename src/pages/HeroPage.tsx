@@ -27,68 +27,132 @@ const HeroPage = () => {
     }
   ];
 
+  // const marketplaceItems = [
+  //   {
+  //     name: 'Handwoven Textiles',
+  //     images: [
+  //       'https://images.pexels.com/photos/6292/red-blue-orange-pattern.jpg?auto=compress&cs=tinysrgb&w=400',
+  //       'https://images.pexels.com/photos/4226881/pexels-photo-4226881.jpeg?auto=compress&cs=tinysrgb&w=400',
+  //       'https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=400'
+  //     ],
+  //     price: '₹800-2500',
+  //     description: 'Traditional tribal fabrics and sarees'
+  //   },
+  //   {
+  //     name: 'Tribal Jewelry',
+  //     images: [
+  //       'https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=400',
+  //       'https://images.pexels.com/photos/4226770/pexels-photo-4226770.jpeg?auto=compress&cs=tinysrgb&w=400',
+  //       'https://images.pexels.com/photos/3408354/pexels-photo-3408354.jpeg?auto=compress&cs=tinysrgb&w=400'
+  //     ],
+  //     price: '₹500-3000',
+  //     description: 'Authentic silver and brass ornaments'
+  //   },
+  //   {
+  //     name: 'Dokra Metal Craft',
+  //     images: [
+  //       'https://images.pexels.com/photos/4226881/pexels-photo-4226881.jpeg?auto=compress&cs=tinysrgb&w=400',
+  //       'https://images.pexels.com/photos/4226924/pexels-photo-4226924.jpeg?auto=compress&cs=tinysrgb&w=400',
+  //       'https://images.pexels.com/photos/6292/red-blue-orange-pattern.jpg?auto=compress&cs=tinysrgb&w=400'
+  //     ],
+  //     price: '₹1200-4000',
+  //     description: 'Ancient lost-wax casting technique'
+  //   },
+  //   {
+  //     name: 'Bamboo Products',
+  //     images: [
+  //       'https://images.pexels.com/photos/4226770/pexels-photo-4226770.jpeg?auto=compress&cs=tinysrgb&w=400',
+  //       'https://images.pexels.com/photos/3408354/pexels-photo-3408354.jpeg?auto=compress&cs=tinysrgb&w=400',
+  //       'https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=400'
+  //     ],
+  //     price: '₹200-1500',
+  //     description: 'Eco-friendly baskets and home decor'
+  //   },
+  //   {
+  //     name: 'Stone Carvings',
+  //     images: [
+  //       'https://images.pexels.com/photos/3408354/pexels-photo-3408354.jpeg?auto=compress&cs=tinysrgb&w=400',
+  //       'https://images.pexels.com/photos/4226881/pexels-photo-4226881.jpeg?auto=compress&cs=tinysrgb&w=400',
+  //       'https://images.pexels.com/photos/4226770/pexels-photo-4226770.jpeg?auto=compress&cs=tinysrgb&w=400'
+  //     ],
+  //     price: '₹800-5000',
+  //     description: 'Intricate sculptures and figurines'
+  //   },
+  //   {
+  //     name: 'Tribal Masks',
+  //     images: [
+  //       'https://images.pexels.com/photos/4226924/pexels-photo-4226924.jpeg?auto=compress&cs=tinysrgb&w=400',
+  //       'https://images.pexels.com/photos/6292/red-blue-orange-pattern.jpg?auto=compress&cs=tinysrgb&w=400',
+  //       'https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=400'
+  //     ],
+  //     price: '₹600-2500',
+  //     description: 'Traditional ceremonial masks'
+  //   }
+  // ];
+
   const marketplaceItems = [
-    {
-      name: 'Handwoven Textiles',
-      images: [
-        'https://images.pexels.com/photos/6292/red-blue-orange-pattern.jpg?auto=compress&cs=tinysrgb&w=400',
-        'https://images.pexels.com/photos/4226881/pexels-photo-4226881.jpeg?auto=compress&cs=tinysrgb&w=400',
-        'https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=400'
-      ],
-      price: '₹800-2500',
-      description: 'Traditional tribal fabrics and sarees'
-    },
-    {
-      name: 'Tribal Jewelry',
-      images: [
-        'https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=400',
-        'https://images.pexels.com/photos/4226770/pexels-photo-4226770.jpeg?auto=compress&cs=tinysrgb&w=400',
-        'https://images.pexels.com/photos/3408354/pexels-photo-3408354.jpeg?auto=compress&cs=tinysrgb&w=400'
-      ],
-      price: '₹500-3000',
-      description: 'Authentic silver and brass ornaments'
-    },
-    {
-      name: 'Dokra Metal Craft',
-      images: [
-        'https://images.pexels.com/photos/4226881/pexels-photo-4226881.jpeg?auto=compress&cs=tinysrgb&w=400',
-        'https://images.pexels.com/photos/4226924/pexels-photo-4226924.jpeg?auto=compress&cs=tinysrgb&w=400',
-        'https://images.pexels.com/photos/6292/red-blue-orange-pattern.jpg?auto=compress&cs=tinysrgb&w=400'
-      ],
-      price: '₹1200-4000',
-      description: 'Ancient lost-wax casting technique'
-    },
-    {
-      name: 'Bamboo Products',
-      images: [
-        'https://images.pexels.com/photos/4226770/pexels-photo-4226770.jpeg?auto=compress&cs=tinysrgb&w=400',
-        'https://images.pexels.com/photos/3408354/pexels-photo-3408354.jpeg?auto=compress&cs=tinysrgb&w=400',
-        'https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=400'
-      ],
-      price: '₹200-1500',
-      description: 'Eco-friendly baskets and home decor'
-    },
-    {
-      name: 'Stone Carvings',
-      images: [
-        'https://images.pexels.com/photos/3408354/pexels-photo-3408354.jpeg?auto=compress&cs=tinysrgb&w=400',
-        'https://images.pexels.com/photos/4226881/pexels-photo-4226881.jpeg?auto=compress&cs=tinysrgb&w=400',
-        'https://images.pexels.com/photos/4226770/pexels-photo-4226770.jpeg?auto=compress&cs=tinysrgb&w=400'
-      ],
-      price: '₹800-5000',
-      description: 'Intricate sculptures and figurines'
-    },
-    {
-      name: 'Tribal Masks',
-      images: [
-        'https://images.pexels.com/photos/4226924/pexels-photo-4226924.jpeg?auto=compress&cs=tinysrgb&w=400',
-        'https://images.pexels.com/photos/6292/red-blue-orange-pattern.jpg?auto=compress&cs=tinysrgb&w=400',
-        'https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=400'
-      ],
-      price: '₹600-2500',
-      description: 'Traditional ceremonial masks'
-    }
-  ];
+  {
+    name: 'Handwoven Textiles',
+    images: [
+      'https://thefederal.com/file/2020/01/weaving.jpg',
+      'https://images.unsplash.com/photo-1571945153237-4929e783af4a?w=400&h=300&fit=crop',
+      'https://images.pexels.com/photos/6292/red-blue-orange-pattern.jpg?auto=compress&cs=tinysrgb&w=400'
+    ],
+    price: '₹800-2500',
+    description: 'Traditional tribal fabrics and sarees'
+  },
+  {
+    name: 'Tribal Jewellery',
+    images: [
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNthFJU7JKunWjN8AQAzp37fA8O8MvQChtZg&s',
+      'https://images.unsplash.com/photo-1603974372039-adc49044b6bd?w=400&h=300&fit=crop',
+      'https://images.pexels.com/photos/3408354/pexels-photo-3408354.jpeg?auto=compress&cs=tinysrgb&w=400'
+    ],
+    price: '₹500-3000',
+    description: 'Authentic silver and brass ornaments'
+  },
+  {
+    name: 'Dokra Metal Craft',
+    images: [
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSZkxZu3IvbYAnyynmthkZd1hig83cTiDGQg&s',
+      'https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&h=300&fit=crop',
+      'https://images.pexels.com/photos/4226881/pexels-photo-4226881.jpeg?auto=compress&cs=tinysrgb&w=400'
+    ],
+    price: '₹1200-4000',
+    description: 'Ancient lost-wax casting technique'
+  },
+  {
+    name: 'Bamboo Products',
+    images: [
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLHjj3bOGNzFtmM2ye6_HhpY0aM4fW6QJ6kw&s',
+      'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop',
+      'https://images.pexels.com/photos/4226770/pexels-photo-4226770.jpeg?auto=compress&cs=tinysrgb&w=400'
+    ],
+    price: '₹200-1500',
+    description: 'Eco-friendly baskets and home decor'
+  },
+  {
+    name: 'Stone Carvings',
+    images: [
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR36Eksg8dAfp3oZdEfP1DyP6v0KlgV1DmwzQ&s',
+      'https://images.unsplash.com/photo-1578321272176-b7bbc0679853?w=400&h=300&fit=crop',
+      'https://images.pexels.com/photos/4226924/pexels-photo-4226924.jpeg?auto=compress&cs=tinysrgb&w=400'
+    ],
+    price: '₹800-5000',
+    description: 'Intricate sculptures and figurines'
+  },
+  {
+    name: 'Tribal Masks',
+    images: [
+      'https://ethnoflorence.wordpress.com/wp-content/uploads/2023/06/gond-mask-2.jpg?w=1024',
+      'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop',
+      'https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=400'
+    ],
+    price: '₹600-2500',
+    description: 'Traditional ceremonial masks'
+  }
+];
+
 
   return (
     <div className="min-h-screen">
@@ -96,11 +160,11 @@ const HeroPage = () => {
       <nav className="bg-white/95 backdrop-blur-md fixed w-full z-50 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-1">
               <img 
-                src="/WhatsApp Image 2025-09-21 at 17.45.41_f0d7bec8.jpg" 
+                src="/logoremov.png" 
                 alt="Pehchan Jharkhand" 
-                className="h-10 w-10 object-contain"
+                className="h-16 w-16 object-contain"
               />
               <span className="text-2xl font-bold text-gray-800">Pehchan Jharkhand</span>
             </div>
@@ -181,17 +245,15 @@ const HeroPage = () => {
         </div>
 
         {/* Floating Elements */}
-        <div className="absolute top-1/4 left-10 animate-bounce-slow">
-          <div className="bg-white/20 backdrop-blur-sm rounded-full p-4">
-            <Camera className="h-8 w-8 text-white" />
-          </div>
-        </div>
+        {/* 
         <div className="absolute bottom-1/4 right-10 animate-bounce-slow animation-delay-1000">
           <div className="bg-white/20 backdrop-blur-sm rounded-full p-4">
             <MapPin className="h-8 w-8 text-white" />
           </div>
         </div>
+        */}
       </section>
+      
 
       {/* Popular Destinations */}
       <section id="destinations" className="py-20 bg-white">
@@ -328,9 +390,9 @@ const HeroPage = () => {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <img 
-                  src="/WhatsApp Image 2025-09-21 at 17.45.41_f0d7bec8.jpg" 
+                  src="/logoremov.png" 
                   alt="Pehchan Jharkhand" 
-                  className="h-10 w-10 object-contain"
+                  className="h-16 w-16 object-contain"
                 />
                 <span className="text-2xl font-bold">Pehchan Jharkhand</span>
               </div>
