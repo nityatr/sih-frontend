@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Shield, ShoppingBag, Star, Users, Camera, ArrowRight, Globe, Menu, X } from 'lucide-react';
+import ImageCarousel from '../components/ImageCarousel';
 
 const HeroPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,37 +30,61 @@ const HeroPage = () => {
   const marketplaceItems = [
     {
       name: 'Handwoven Textiles',
-      image: 'https://images.pexels.com/photos/6292/red-blue-orange-pattern.jpg?auto=compress&cs=tinysrgb&w=400',
+      images: [
+        'https://images.pexels.com/photos/6292/red-blue-orange-pattern.jpg?auto=compress&cs=tinysrgb&w=400',
+        'https://images.pexels.com/photos/4226881/pexels-photo-4226881.jpeg?auto=compress&cs=tinysrgb&w=400',
+        'https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=400'
+      ],
       price: '₹800-2500',
       description: 'Traditional tribal fabrics and sarees'
     },
     {
       name: 'Tribal Jewelry',
-      image: 'https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=400',
+      images: [
+        'https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=400',
+        'https://images.pexels.com/photos/4226770/pexels-photo-4226770.jpeg?auto=compress&cs=tinysrgb&w=400',
+        'https://images.pexels.com/photos/3408354/pexels-photo-3408354.jpeg?auto=compress&cs=tinysrgb&w=400'
+      ],
       price: '₹500-3000',
       description: 'Authentic silver and brass ornaments'
     },
     {
       name: 'Dokra Metal Craft',
-      image: 'https://images.pexels.com/photos/4226881/pexels-photo-4226881.jpeg?auto=compress&cs=tinysrgb&w=400',
+      images: [
+        'https://images.pexels.com/photos/4226881/pexels-photo-4226881.jpeg?auto=compress&cs=tinysrgb&w=400',
+        'https://images.pexels.com/photos/4226924/pexels-photo-4226924.jpeg?auto=compress&cs=tinysrgb&w=400',
+        'https://images.pexels.com/photos/6292/red-blue-orange-pattern.jpg?auto=compress&cs=tinysrgb&w=400'
+      ],
       price: '₹1200-4000',
       description: 'Ancient lost-wax casting technique'
     },
     {
       name: 'Bamboo Products',
-      image: 'https://images.pexels.com/photos/4226770/pexels-photo-4226770.jpeg?auto=compress&cs=tinysrgb&w=400',
+      images: [
+        'https://images.pexels.com/photos/4226770/pexels-photo-4226770.jpeg?auto=compress&cs=tinysrgb&w=400',
+        'https://images.pexels.com/photos/3408354/pexels-photo-3408354.jpeg?auto=compress&cs=tinysrgb&w=400',
+        'https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=400'
+      ],
       price: '₹200-1500',
       description: 'Eco-friendly baskets and home decor'
     },
     {
       name: 'Stone Carvings',
-      image: 'https://images.pexels.com/photos/3408354/pexels-photo-3408354.jpeg?auto=compress&cs=tinysrgb&w=400',
+      images: [
+        'https://images.pexels.com/photos/3408354/pexels-photo-3408354.jpeg?auto=compress&cs=tinysrgb&w=400',
+        'https://images.pexels.com/photos/4226881/pexels-photo-4226881.jpeg?auto=compress&cs=tinysrgb&w=400',
+        'https://images.pexels.com/photos/4226770/pexels-photo-4226770.jpeg?auto=compress&cs=tinysrgb&w=400'
+      ],
       price: '₹800-5000',
       description: 'Intricate sculptures and figurines'
     },
     {
       name: 'Tribal Masks',
-      image: 'https://images.pexels.com/photos/4226924/pexels-photo-4226924.jpeg?auto=compress&cs=tinysrgb&w=400',
+      images: [
+        'https://images.pexels.com/photos/4226924/pexels-photo-4226924.jpeg?auto=compress&cs=tinysrgb&w=400',
+        'https://images.pexels.com/photos/6292/red-blue-orange-pattern.jpg?auto=compress&cs=tinysrgb&w=400',
+        'https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=400'
+      ],
       price: '₹600-2500',
       description: 'Traditional ceremonial masks'
     }
@@ -275,14 +300,11 @@ const HeroPage = () => {
                 key={index}
                 className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-500 overflow-hidden group hover:-translate-y-2"
               >
-                <div className="relative overflow-hidden h-48">
-                  <img 
-                    src={item.image} 
-                    alt={item.name}
-                    className="w-full h-full object-cover group-hover:rotate-180 group-hover:scale-110 transition-all duration-700 ease-in-out"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                </div>
+                <ImageCarousel 
+                  images={item.images} 
+                  alt={item.name}
+                  className="h-48"
+                />
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-800 mb-2">{item.name}</h3>
                   <p className="text-gray-600 text-sm mb-3">{item.description}</p>

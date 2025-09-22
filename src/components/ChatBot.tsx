@@ -164,7 +164,7 @@ const ChatBot = () => {
             </div>
             <button
               onClick={() => setIsOpen(false)}
-              className="text-white/80 hover:text-white transition-colors"
+              className="text-white/80 hover:text-white hover:bg-white/20 rounded-full p-1 transition-all duration-200"
             >
               <X className="h-5 w-5" />
             </button>
@@ -275,7 +275,7 @@ const ChatBot = () => {
             </div>
             <button
               onClick={() => setIsOpen(false)}
-              className="text-white/80 hover:text-white transition-colors"
+              className="text-white/80 hover:text-white hover:bg-white/20 rounded-full p-2 transition-all duration-200"
             >
               <X className="h-6 w-6" />
             </button>

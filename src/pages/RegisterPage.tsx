@@ -57,7 +57,7 @@ const RegisterPage = () => {
               <img 
                 src="/WhatsApp Image 2025-09-21 at 17.45.41_f0d7bec8.jpg" 
                 alt="Pehchan Jharkhand" 
-                className="h-12 w-12 object-contain"
+                className="h-16 w-16 object-contain"
               />
               <span className="text-3xl font-bold text-gray-800">Pehchan Jharkhand</span>
             </div>
